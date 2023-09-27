@@ -1,0 +1,10 @@
+apiVersion: ec2.aws.upbound.io/v1beta1 
+kind: VPC
+metadata:
+  name: argocd-test
+spec:
+  forProvider:
+    region: eu-central-1
+    cidrBlock: 172.16.0.0/16 
+    tags:
+      Name: argocd-test
